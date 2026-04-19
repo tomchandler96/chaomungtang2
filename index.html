@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chào mừng đến bệnh viện</title>
+
+<style>
+body {
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container {
+  text-align:center;
+  padding:30px;
+  max-width: 400px;
+}
+
+.logo {
+  width:80px;
+  height:80px;
+  margin-bottom:15px;
+}
+
+h1 {
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+p {
+  font-size:14px;
+  opacity:0.9;
+}
+
+.loader {
+  margin:25px auto 0;
+  border:4px solid rgba(255,255,255,0.3);
+  border-top:4px solid #fff;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.footer {
+  position:fixed;
+  bottom:10px;
+  font-size:12px;
+  opacity:0.8;
+}
+
+</style>
+
+<script>
+setTimeout(function(){
+  window.location.href = "https://docs.google.com/presentation/d/e/2PACX-1vQI6VL7obZkYmQ3lTu8aLVZnk5tjYdl5P4X0D2DGp4K_fSYHXaACqCqIEGE_Yf_0IsAQS1iZWnucAU2/pub?start=true&loop=false&delayms=999999&rm=minimal";
+}, 1500);
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LOGO: thay link logo bệnh viện ở đây -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/OOjs_UI_icon_mapPin-progressive.svg" class="logo">
+
+  <h1>Chào mừng đến bệnh viện Đa Khoa Bắc Ninh số 2</h1>
+  <p>Hệ thống hướng dẫn đang được tải...</p>
+
+  <div class="loader"></div>
+
+</div>
+
+<div class="footer">
+  Vui lòng chờ trong giây lát
+</div>
+
+</body>
+</html>
