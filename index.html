@@ -9,36 +9,53 @@
 <style>
 body {
   margin:0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
   background: linear-gradient(180deg, #cfe8ff, #eaf4ff);
   display:flex;
   justify-content:center;
   align-items:center;
   height:100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
+/* KHUNG 9:16 */
 .container {
   width:100%;
   max-width:420px;
-  height:90vh;
+  aspect-ratio: 9 / 16;
+
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
+
   padding:20px;
+  box-sizing:border-box;
+
+  animation:fadeIn 0.8s ease;
 }
 
+/* LOGO */
 .logo {
   width:160px;
   height:160px;
+  object-fit:contain;
   margin-bottom:20px;
+
+  border-radius:50%;
+  background:white;
+  padding:10px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+  animation:zoomIn 0.8s ease;
 }
 
+/* TEXT */
 h1 {
-  font-size:22px;
+  font-size:20px;
   color:#1b4f9c;
-  margin-bottom:10px;
+  margin-bottom:5px;
 }
 
 h2 {
@@ -53,6 +70,7 @@ p {
   color:#4a6fa5;
 }
 
+/* LOADING */
 .loader {
   margin-top:30px;
   border:5px solid rgba(0,0,0,0.1);
@@ -63,9 +81,29 @@ p {
   animation:spin 1s linear infinite;
 }
 
+/* ANIMATION */
 @keyframes spin {
   100% { transform: rotate(360deg); }
 }
+
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity:0; }
+  to { transform: scale(1); opacity:1; }
+}
+
+/* FOOTER */
+.footer {
+  position:absolute;
+  bottom:15px;
+  font-size:12px;
+  color:#6c8fc7;
+}
+
 </style>
 
 <script>
@@ -80,8 +118,7 @@ setTimeout(function(){
 
 <div class="container">
 
-  <!-- LOGO -->
-  <img src="https://github.com/tomchandler96/chaomungtang2/blob/main/logo.png" class="logo">
+  <img src="https://raw.githubusercontent.com/tomchandler96/chaomungtang2/main/logo.png" class="logo">
 
   <h1>Chào mừng đến</h1>
   <h2>Bệnh Viện Đa Khoa<br>Bắc Ninh Số 2</h2>
@@ -90,6 +127,10 @@ setTimeout(function(){
 
   <div class="loader"></div>
 
+</div>
+
+<div class="footer">
+  Vui lòng chờ trong giây lát
 </div>
 
 </body>
