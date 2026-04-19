@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chào mừng đến bệnh viện</title>
+
+<title>Bệnh viện Bắc Ninh Số 2</title>
 
 <style>
 body {
   margin:0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
-  color:white;
+  background: linear-gradient(180deg, #cfe8ff, #eaf4ff);
   display:flex;
   justify-content:center;
   align-items:center;
@@ -18,48 +18,54 @@ body {
 }
 
 .container {
+  width:100%;
+  max-width:420px;
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  padding:30px;
-  max-width: 400px;
+  padding:20px;
 }
 
 .logo {
-  width:80px;
-  height:80px;
-  margin-bottom:15px;
+  width:160px;
+  height:160px;
+  margin-bottom:20px;
 }
 
 h1 {
   font-size:22px;
+  color:#1b4f9c;
   margin-bottom:10px;
+}
+
+h2 {
+  font-size:26px;
+  color:#0b3d91;
+  font-weight:bold;
+  margin-bottom:15px;
 }
 
 p {
   font-size:14px;
-  opacity:0.9;
+  color:#4a6fa5;
 }
 
 .loader {
-  margin:25px auto 0;
-  border:4px solid rgba(255,255,255,0.3);
-  border-top:4px solid #fff;
+  margin-top:30px;
+  border:5px solid rgba(0,0,0,0.1);
+  border-top:5px solid #4da3ff;
   border-radius:50%;
-  width:40px;
-  height:40px;
+  width:50px;
+  height:50px;
   animation:spin 1s linear infinite;
 }
 
 @keyframes spin {
   100% { transform: rotate(360deg); }
 }
-
-.footer {
-  position:fixed;
-  bottom:10px;
-  font-size:12px;
-  opacity:0.8;
-}
-
 </style>
 
 <script>
@@ -74,18 +80,16 @@ setTimeout(function(){
 
 <div class="container">
 
-  <!-- LOGO: thay link logo bệnh viện ở đây -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/OOjs_UI_icon_mapPin-progressive.svg" class="logo">
+  <!-- LOGO -->
+  <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/logo.png" class="logo">
 
-  <h1>Chào mừng đến bệnh viện Đa Khoa Bắc Ninh số 2</h1>
+  <h1>Chào mừng đến</h1>
+  <h2>Bệnh Viện Đa Khoa<br>Bắc Ninh Số 2</h2>
+
   <p>Hệ thống hướng dẫn đang được tải...</p>
 
   <div class="loader"></div>
 
-</div>
-
-<div class="footer">
-  Vui lòng chờ trong giây lát
 </div>
 
 </body>
